@@ -1,0 +1,267 @@
+/* Upload Proof Page Styles */
+
+main {
+    margin-top: 80px;
+    padding: 24px 0 48px;
+}
+
+.back-button {
+    max-width: 700px;
+    margin: 0 auto 24px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--gold-primary);
+    gap: 12px;
+}
+
+.upload-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border-radius: var(--border-radius-xl);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.upload-header {
+    background: var(--gradient-dark);
+    padding: 32px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.upload-header i {
+    font-size: 3rem;
+    color: var(--gold-primary);
+    margin-bottom: 16px;
+}
+
+.upload-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.upload-header p {
+    color: var(--text-secondary);
+}
+
+.transaction-info {
+    padding: 24px 32px;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-value {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.info-value.gold {
+    color: var(--gold-primary);
+}
+
+.upload-area,
+.preview-area {
+    padding: 32px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.upload-icon {
+    font-size: 3rem;
+    color: var(--gold-primary);
+    margin-bottom: 16px;
+}
+
+.upload-area p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.select-file-btn {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-color);
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.select-file-btn:hover {
+    background: var(--gold-primary);
+    color: var(--bg-primary);
+}
+
+.file-name {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.preview-area img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 12px;
+    margin: 16px 0;
+    border: 1px solid var(--border-color);
+}
+
+.remove-file-btn {
+    background: rgba(220, 38, 38, 0.1);
+    border: 1px solid var(--red-primary);
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: var(--red-primary);
+    transition: all 0.3s;
+}
+
+.remove-file-btn:hover {
+    background: var(--red-primary);
+    color: white;
+}
+
+.address-confirm {
+    padding: 16px 32px;
+    background: rgba(251, 191, 36, 0.1);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+}
+
+.address-confirm i {
+    color: var(--gold-primary);
+}
+
+.action-buttons {
+    padding: 24px 32px;
+    background: var(--bg-secondary);
+}
+
+.submit-proof-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--gradient-red);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.submit-proof-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.submit-proof-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+    gap: 16px;
+}
+
+.info-note {
+    padding: 16px 32px;
+    display: flex;
+    gap: 12px;
+    background: rgba(59, 130, 246, 0.1);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.live-payouts-feed {
+    max-width: 700px;
+    margin: 32px auto 0;
+    background: var(--bg-card);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.feed-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    background: var(--gradient-dark);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.feed-items {
+    padding: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.feed-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.feed-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--bg-elevated);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .upload-header,
+    .transaction-info,
+    .upload-area,
+    .preview-area,
+    .address-confirm,
+    .action-buttons,
+    .info-note {
+        padding: 20px;
+    }
+    .transaction-info {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

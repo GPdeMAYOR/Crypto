@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Upload Payment Proof - CRYPTO MEME Giveaway">
+    <title>Upload Proof | CRYPTO MEME Giveaway</title>
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦅</text></svg>">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/upload-proof.css">
+</head>
+
+<body>
+
+    <div id="toast-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-crown"></i><span>CRYPTO MEME</span></div>
+            <div class="nav-links desktop-nav">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="how-it-works.html"><i class="fas fa-question-circle"></i> How It Works</a>
+                <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                <div class="auth-link-container"><a href="login.html" class="auth-btn"><i class="fas fa-sign-in-alt"></i> Login</a></div>
+                <button class="theme-toggle" id="theme-toggle-desktop"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="mobile-nav">
+                <button class="theme-toggle-mobile" id="theme-toggle-mobile"><i class="fas fa-moon"></i></button>
+                <button class="hamburger" id="hamburger-btn"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="mobile-menu-header"><span class="menu-title">Menu</span><button class="close-menu" id="close-menu"><i class="fas fa-times"></i></button></div>
+                <div class="mobile-menu-links">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="how-it-works.html"><i class="fas fa-question-circle"></i> How It Works</a>
+                    <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+                    <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                    <div class="mobile-auth-link"><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></div>
+                </div>
+            </div>
+            <div class="menu-overlay" id="menu-overlay"></div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="back-button">
+                <a href="send.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Send</a>
+            </div>
+
+            <div class="upload-card" id="upload-card">
+                <div class="upload-header">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h1>Submit Payment Proof</h1>
+                    <p>Upload a screenshot of your transaction</p>
+                </div>
+
+                <div class="transaction-info" id="transaction-info">
+                    <!-- dynamic crypto info will be inserted here -->
+                </div>
+
+                <div class="upload-area" id="upload-area">
+                    <div class="upload-icon"><i class="fas fa-camera"></i></div>
+                    <p>Take a screenshot of your transaction from your wallet app or blockchain explorer</p>
+                    <input type="file" id="proof-image" accept="image/png,image/jpeg,image/jpg" style="display: none;">
+                    <button class="select-file-btn" id="select-file-btn"><i class="fas fa-folder-open"></i> Choose File</button>
+                    <span class="file-name" id="file-name">No file selected</span>
+                </div>
+
+                <div class="preview-area" id="preview-area" style="display: none;">
+                    <h3><i class="fas fa-image"></i> Preview</h3>
+                    <img id="image-preview" alt="Preview">
+                    <button class="remove-file-btn" id="remove-file-btn"><i class="fas fa-trash-alt"></i> Remove</button>
+                </div>
+
+                <div class="address-confirm">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Sending to: <strong id="wallet-address-short"></strong></span>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="submit-proof-btn" id="submit-proof-btn" disabled>
+                        <i class="fas fa-upload"></i> Upload & Verify
+                    </button>
+                </div>
+
+                <div class="info-note">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Your transaction will be verified on-chain. This process usually takes 2-5 minutes after submission.</p>
+                </div>
+            </div>
+
+            <!-- Live payouts feed (same as other pages) -->
+            <div class="live-payouts-feed">
+                <div class="feed-header"><i class="fas fa-broadcast-tower"></i><span>Live Recent Payouts</span><span class="live-badge-feed"><span class="pulse-dot-feed"></span> LIVE</span>
+                </div>
+                <div class="feed-items" id="feed-items">
+                    <div class="feed-item">
+                        <div class="feed-icon">₿</div>
+                        <div class="feed-content">
+                            <div class="feed-name">Erik L. 🇸🇪</div>
+                            <div class="feed-amount">just claimed 800 SOL ($120,000)</div>
+                        </div>
+                    </div>
+                    <div class="feed-item">
+                        <div class="feed-icon">◎</div>
+                        <div class="feed-content">
+                            <div class="feed-name">Musa D. 🇹🇿</div>
+                            <div class="feed-amount">just claimed 500 USDT ($500)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><i class="fas fa-crown"></i><span>TRUMP MEME</span></div>
+                <div class="footer-links"><a href="how-it-works.html">How It Works</a><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Disclaimer</a></div>
+                <div class="footer-disclaimer"><i class="fas fa-exclamation-triangle"></i>
+                    <p></p>
+                </div>
+                <div class="copyright">&copy; 2026 CryptoMeme</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/crypto-data.js"></script>
+    <script src="js/payout.js"></script>
+    <script src="js/upload-proof.js"></script>
+</body>
+
+</html>

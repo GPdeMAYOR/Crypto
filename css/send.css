@@ -1,0 +1,1025 @@
+/* ========================================
+   SEND PAGE STYLES
+   Professional design matching screenshots
+   Fully responsive with dark/light mode support
+   ======================================== */
+
+/* Main Container */
+main {
+    margin-top: 80px;
+    padding: 24px 0 48px;
+    min-height: calc(100vh - 80px);
+}
+
+/* Back Button */
+.back-button {
+    max-width: 800px;
+    margin: 0 auto 24px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 0;
+}
+
+.back-link:hover {
+    color: var(--gold-primary);
+    gap: 12px;
+    transform: translateX(-4px);
+}
+
+.back-link i {
+    font-size: 0.9rem;
+}
+
+/* Send Card */
+.send-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border-radius: var(--border-radius-xl);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 60px;
+    color: var(--text-secondary);
+}
+
+.loading-spinner i {
+    font-size: 1.5rem;
+    color: var(--gold-primary);
+}
+
+/* Crypto Header */
+.crypto-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 32px;
+    background: var(--gradient-dark);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.crypto-icon-large {
+    width: 80px;
+    height: 80px;
+    background: var(--bg-elevated);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.crypto-icon-large:hover {
+    transform: scale(1.05);
+}
+
+.crypto-info h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.crypto-ticker-large {
+    font-size: 1rem;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* How This Works Card */
+.how-it-works-card {
+    padding: 24px 32px;
+    background: rgba(251, 191, 36, 0.05);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.how-it-works-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.how-it-works-card h3 i {
+    color: var(--gold-primary);
+    font-size: 1.1rem;
+}
+
+.rules-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rules-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.rules-list li i {
+    width: 20px;
+    color: var(--gold-primary);
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+.rules-list li strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.rules-list li .gold {
+    color: var(--gold-primary);
+    font-weight: 700;
+}
+
+/* Crypto Amount Card */
+.crypto-amount-card {
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.crypto-type-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-elevated);
+    padding: 8px 16px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.crypto-type-badge i {
+    font-size: 1rem;
+}
+
+.crypto-type-badge .return-badge {
+    background: var(--gradient-gold);
+    padding: 2px 10px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--bg-primary);
+    margin-left: 8px;
+}
+
+/* Limits Grid */
+.limits-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.limit-box {
+    flex: 1;
+    text-align: center;
+    background: var(--bg-secondary);
+    padding: 16px;
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.limit-box:hover {
+    transform: translateY(-2px);
+    border-color: var(--gold-primary);
+}
+
+.limit-label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.limit-value-large {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.limit-unit {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-left: 4px;
+}
+
+.limit-arrow {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+}
+
+.limit-arrow i {
+    transition: all 0.3s ease;
+}
+
+.limit-box:hover .limit-arrow i {
+    color: var(--gold-primary);
+}
+
+.return-box {
+    background: var(--gradient-gold);
+    border: none;
+}
+
+.return-box .limit-value-large {
+    color: var(--bg-primary);
+}
+
+.return-box .limit-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Wallet Address Card */
+.wallet-address-card {
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.wallet-address-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wallet-address-card h3 i {
+    color: var(--gold-primary);
+}
+
+.address-container {
+    margin-bottom: 20px;
+}
+
+.address-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-lg);
+    padding: 16px 20px;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.address-wrapper:hover {
+    border-color: var(--gold-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.wallet-address {
+    flex: 1;
+    font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+    font-size: 0.85rem;
+    word-break: break-all;
+    color: var(--text-primary);
+    letter-spacing: 0.3px;
+}
+
+.copy-address-btn-large {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 10px 18px;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.copy-address-btn-large:hover {
+    background: var(--gold-primary);
+    border-color: var(--gold-primary);
+    color: var(--bg-primary);
+    transform: scale(1.02);
+}
+
+/* Address Visual */
+.address-visual {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.qr-placeholder {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-card);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--gold-primary);
+    border: 1px solid var(--border-color);
+}
+
+.address-short {
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gold-primary);
+    letter-spacing: 0.5px;
+}
+
+/* Amount Input Card */
+.amount-input-card {
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.amount-input-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.amount-input-card h3 i {
+    color: var(--gold-primary);
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 16px 20px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.2);
+}
+
+.input-group input::-webkit-inner-spin-button,
+.input-group input::-webkit-outer-spin-button {
+    opacity: 0.5;
+}
+
+.input-currency {
+    background: var(--gradient-gold);
+    padding: 12px 20px;
+    border-radius: var(--border-radius-lg);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--bg-primary);
+}
+
+/* Quick Amounts */
+.quick-amounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.quick-amount-btn {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+}
+
+.quick-amount-btn:hover {
+    background: var(--gold-primary);
+    border-color: var(--gold-primary);
+    color: var(--bg-primary);
+    transform: translateY(-2px);
+}
+
+/* Return Preview */
+.return-preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--gradient-dark);
+    padding: 20px 24px;
+    border-radius: var(--border-radius-lg);
+    margin-top: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.preview-item {
+    text-align: center;
+    flex: 1;
+}
+
+.preview-item span {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.preview-item strong {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.preview-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 0 16px;
+}
+
+.preview-arrow i {
+    font-size: 1.3rem;
+    color: var(--gold-primary);
+}
+
+.x2-badge {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--gold-primary);
+    background: rgba(251, 191, 36, 0.2);
+    padding: 2px 8px;
+    border-radius: 50px;
+}
+
+/* Warning Card */
+.warning-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 32px;
+    background: rgba(220, 38, 38, 0.08);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.warning-card i {
+    font-size: 1.5rem;
+    color: var(--gold-primary);
+}
+
+.warning-text {
+    flex: 1;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.warning-text strong {
+    color: var(--red-primary);
+    font-weight: 700;
+}
+
+/* Action Buttons */
+.action-buttons {
+    padding: 24px 32px;
+    background: var(--bg-secondary);
+}
+
+.submit-payment-btn {
+    width: 100%;
+    padding: 18px 24px;
+    background: var(--gradient-red);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-payment-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.submit-payment-btn:hover::before {
+    left: 100%;
+}
+
+.submit-payment-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+    gap: 16px;
+}
+
+.submit-payment-btn:active {
+    transform: translateY(1px);
+}
+
+/* Live Payouts Feed */
+.live-payouts-feed {
+    max-width: 800px;
+    margin: 32px auto 0;
+    background: var(--bg-card);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    animation: fadeInUp 0.5s ease 0.2s both;
+}
+
+.feed-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    background: var(--gradient-dark);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.feed-header i {
+    color: var(--gold-primary);
+    font-size: 1.1rem;
+}
+
+.feed-header span {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.live-badge-feed {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(220, 38, 38, 0.15);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--red-primary);
+}
+
+.pulse-dot-feed {
+    width: 6px;
+    height: 6px;
+    background: var(--red-primary);
+    border-radius: 50%;
+    animation: pulseFeed 1.5s infinite;
+}
+
+@keyframes pulseFeed {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.feed-items {
+    padding: 8px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.feed-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    animation: slideInFeed 0.3s ease;
+}
+
+@keyframes slideInFeed {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.feed-item:last-child {
+    border-bottom: none;
+}
+
+.feed-item:hover {
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-md);
+}
+
+.feed-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-elevated);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.feed-content {
+    flex: 1;
+}
+
+.feed-name {
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
+
+.feed-amount {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+}
+
+/* Custom Scrollbar for Feed */
+.feed-items::-webkit-scrollbar {
+    width: 4px;
+}
+
+.feed-items::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 10px;
+}
+
+.feed-items::-webkit-scrollbar-thumb {
+    background: var(--gold-primary);
+    border-radius: 10px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .send-card {
+        margin: 0 20px;
+    }
+    
+    .live-payouts-feed {
+        margin: 32px 20px 0;
+    }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+    main {
+        margin-top: 70px;
+        padding: 16px 0 32px;
+    }
+    
+    .back-button {
+        padding: 0 16px;
+        margin-bottom: 16px;
+    }
+    
+    .send-card {
+        margin: 0 16px;
+        border-radius: var(--border-radius-lg);
+    }
+    
+    .crypto-header {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .crypto-icon-large {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+    
+    .crypto-info h1 {
+        font-size: 1.5rem;
+    }
+    
+    .how-it-works-card,
+    .crypto-amount-card,
+    .wallet-address-card,
+    .amount-input-card,
+    .warning-card,
+    .action-buttons {
+        padding: 20px;
+    }
+    
+    .rules-list li {
+        font-size: 0.8rem;
+    }
+    
+    /* Limits Grid - Stack on mobile */
+    .limits-grid {
+        flex-direction: column;
+    }
+    
+    .limit-box {
+        width: 100%;
+    }
+    
+    .limit-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .limit-box:hover .limit-arrow i {
+        transform: rotate(0deg);
+    }
+    
+    .limit-value-large {
+        font-size: 1.4rem;
+    }
+    
+    /* Address Section */
+    .address-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .wallet-address {
+        font-size: 0.7rem;
+        word-break: break-all;
+    }
+    
+    .copy-address-btn-large {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .address-visual {
+        justify-content: center;
+    }
+    
+    /* Return Preview - Stack on mobile */
+    .return-preview {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .preview-arrow {
+        transform: rotate(90deg);
+        padding: 8px 0;
+    }
+    
+    .quick-amounts {
+        justify-content: center;
+    }
+    
+    .quick-amount-btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+    
+    .submit-payment-btn {
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+    
+    .live-payouts-feed {
+        margin: 24px 16px 0;
+    }
+    
+    .feed-header {
+        padding: 12px 16px;
+    }
+    
+    .feed-item {
+        padding: 10px;
+    }
+    
+    .feed-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+    
+    .feed-name {
+        font-size: 0.8rem;
+    }
+    
+    .feed-amount {
+        font-size: 0.65rem;
+    }
+}
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+    .crypto-header {
+        padding: 16px;
+    }
+    
+    .how-it-works-card,
+    .crypto-amount-card,
+    .wallet-address-card,
+    .amount-input-card,
+    .warning-card,
+    .action-buttons {
+        padding: 16px;
+    }
+    
+    .input-group input {
+        padding: 12px 16px;
+        font-size: 1rem;
+    }
+    
+    .input-currency {
+        padding: 10px 16px;
+    }
+    
+    .limit-value-large {
+        font-size: 1.2rem;
+    }
+    
+    .preview-item strong {
+        font-size: 1rem;
+    }
+    
+    .quick-amount-btn {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Dark Mode Specific Adjustments */
+[data-theme="dark"] .how-it-works-card {
+    background: rgba(251, 191, 36, 0.08);
+}
+
+[data-theme="dark"] .warning-card {
+    background: rgba(220, 38, 38, 0.12);
+}
+
+[data-theme="dark"] .address-wrapper:hover {
+    border-color: var(--gold-primary);
+    background: rgba(251, 191, 36, 0.05);
+}
+
+[data-theme="dark"] .quick-amount-btn:hover {
+    background: var(--gold-primary);
+    color: var(--bg-primary);
+}
+
+/* Light Mode Specific Adjustments */
+[data-theme="light"] .how-it-works-card {
+    background: rgba(251, 191, 36, 0.08);
+}
+
+[data-theme="light"] .warning-card {
+    background: rgba(220, 38, 38, 0.06);
+}
+
+[data-theme="light"] .address-wrapper {
+    background: #f8f9fa;
+}
+
+[data-theme="light"] .limit-box {
+    background: #f8f9fa;
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.send-card,
+.live-payouts-feed {
+    animation: fadeInUp 0.5s ease;
+}
+
+/* Hover Effects */
+.crypto-send-card {
+    transition: all 0.3s ease;
+}
+
+.crypto-send-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Focus States for Accessibility */
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--gold-primary);
+    outline-offset: 2px;
+}
+
+/* Disabled Button State */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Success State for Copy Button */
+.copy-address-btn-large.copied {
+    background: #10b981;
+    border-color: #10b981;
+    color: white;
+}
+
+/* Input Number Spinner Hide for Chrome/Safari/Edge */
+.input-group input[type="number"]::-webkit-inner-spin-button,
+.input-group input[type="number"]::-webkit-outer-spin-button {
+    opacity: 0.5;
+}
+
+.input-group input[type="number"] {
+    -moz-appearance: textfield;
+}

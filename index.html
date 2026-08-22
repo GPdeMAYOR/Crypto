@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Crypto Meme Crypto Giveaway - Educational Demo Project">
+    <title>CRYPTO MEME | Biggest Crypto Giveaway</title>
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦅</text></svg>">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+
+<body>
+
+    <!-- Toast Container for Live Payouts -->
+    <div id="toast-container"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-crown"></i>
+                <span>CRYPTO MEME</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="how-it-works.html"><i class="fas fa-question-circle"></i> How It Works</a>
+                <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                <div class="auth-link-container">
+                    <a href="login.html" id="desktop-login-btn" class="auth-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </div>
+                <button class="theme-toggle" id="theme-toggle-desktop">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav">
+                <button class="theme-toggle-mobile" id="theme-toggle-mobile">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu (Right Side) -->
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="mobile-menu-header">
+                    <span class="menu-title">Menu</span>
+                    <button class="close-menu" id="close-menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="mobile-menu-links">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="how-it-works.html"><i class="fas fa-question-circle"></i> How It Works</a>
+                    <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+                    <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                    <div class="mobile-auth-link">
+                        <a href="login.html" id="mobile-login-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-overlay" id="menu-overlay"></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg-gradient"></div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="live-badge-hero">
+                        <span class="pulse-dot-hero"></span> LIVE EVENT
+                    </span>
+                    <span class="ssl-badge">
+                        <i class="fas fa-lock"></i> 256-bit SSL Secured
+                    </span>
+                </div>
+
+                <h1 class="hero-title">
+                    BIGGEST<br> CRYPTO GIVEAWAY<br> OF <span class="gold-gradient">$100,000,000</span>
+                </h1>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Verified Official Event</span>
+                    </div>
+                    <div class="hero-stat">
+                        <i class="fas fa-link"></i>
+                        <span>Smart Contract Powered</span>
+                    </div>
+                    <div class="hero-stat">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span><span id="paid-out-count">10,000+</span> Paid Out</span>
+                    </div>
+                </div>
+
+                <div class="live-participants">
+                    <div class="live-indicator-large">
+                        <span class="pulse-dot-large"></span> LIVE
+                    </div>
+                    <span class="participant-number" id="participant-count">12,881</span>
+                    <span class="participant-text">Participants</span>
+                </div>
+
+                <a href="dashboard.html" class="cta-button-main">
+                    <span>Participate Now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <div class="hero-note">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Smart contract verified • On-chain payouts</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prize Pool Section -->
+        <section class="prize-pool">
+            <div class="container">
+                <h2 class="section-title">GIVEAWAY PRIZES</h2>
+                <div class="prize-grid">
+                    <div class="prize-card">
+                        <div class="prize-icon-wrapper">
+                            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg" alt="Bitcoin" class="crypto-icon-img" onerror="this.src='https://placehold.co/60x60/f7931a/white?text=₿'">
+                        </div>
+                        <h3>1,000 BTC</h3>
+                        <div class="live-status">
+                            <span class="live-dot"></span> LIVE
+                        </div>
+                        <div class="prize-value">≈ $65,000,000</div>
+                    </div>
+                    <div class="prize-card">
+                        <div class="prize-icon-wrapper">
+                            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.svg" alt="Ethereum" class="crypto-icon-img" onerror="this.src='https://placehold.co/60x60/627eea/white?text=Ξ'">
+                        </div>
+                        <h3>10,000 ETH</h3>
+                        <div class="live-status">
+                            <span class="live-dot"></span> LIVE
+                        </div>
+                        <div class="prize-value">≈ $20,000,000</div>
+                    </div>
+                    <div class="prize-card">
+                        <div class="prize-icon-wrapper">
+                            <img src="https://cryptologos.cc/logos/solana-sol-logo.svg" alt="Solana" class="crypto-icon-img" onerror="this.src='https://placehold.co/60x60/00ffbd/white?text=◎'">
+                        </div>
+                        <h3>500,000 SOL</h3>
+                        <div class="live-status">
+                            <span class="live-dot"></span> LIVE
+                        </div>
+                        <div class="prize-value">≈ $7,500,000</div>
+                    </div>
+                    <div class="prize-card">
+                        <div class="prize-icon-wrapper">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>1,000,000 TRUMP</h3>
+                        <div class="live-status">
+                            <span class="live-dot"></span> LIVE
+                        </div>
+                        <div class="prize-value">≈ $7,500,000</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works-preview">
+            <div class="container">
+                <h2 class="section-title">HOW TO PARTICIPATE</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Choose Your Crypto</h3>
+                        <p>Select which cryptocurrency you want to participate with: BTC, ETH, SOL, or TRUMP tokens.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h3>Send to Address</h3>
+                        <p>Copy the wallet address for your chosen crypto and send your contribution from your wallet.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Wait for Confirmation</h3>
+                        <p>The blockchain confirms your transaction automatically. This usually takes 5-10 minutes.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">04</div>
+                        <div class="step-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>Receive 2x Back</h3>
+                        <p>Once confirmed, the smart contract automatically sends double your contribution back to you.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="how-it-works.html" class="btn-outline">View Full Guide <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Send & 2X Back Crypto Selection - DYNAMICALLY GENERATED BY JAVASCRIPT -->
+        <section class="crypto-send-section">
+            <div class="container">
+                <h2 class="section-title">SEND & <span class="gold-gradient">RECEIVE 2X BACK</span></h2>
+                <p class="section-subtitle">Choose your cryptocurrency to participate in the giveaway</p>
+                <div class="crypto-send-grid" id="crypto-send-grid">
+                    <!-- Crypto cards will be dynamically inserted by JavaScript -->
+                </div>
+                <div class="warning-message">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trump Video Section with YouTube Subscription -->
+        <section class="trump-video-section">
+            <div class="container">
+                <div class="video-card">
+                    <div class="video-header">
+                        <h2><i class="fab fa-youtube"></i> OFFICIAL ANNOUNCEMENT</h2>
+                        <p>Watch President Donald J. Trump's official announcement of the biggest crypto giveaway</p>
+                    </div>
+
+                    <div class="video-wrapper">
+                        <div id="youtube-player"></div>
+                    </div>
+
+                    <div class="video-footer">
+                        <div class="video-stats">
+                            <div class="video-views">
+                                <i class="fas fa-eye"></i>
+                                <span id="video-views">12.8M</span>
+                                <span>views</span>
+                                <span class="separator">•</span>
+                                <span>Promoted 2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="video-actions">
+                            <button class="like-btn" id="like-btn">
+                                <i class="fas fa-thumbs-up"></i>
+                                <span id="like-count">847K</span>
+                            </button>
+                            <button class="dislike-btn" id="dislike-btn">
+                                <i class="fas fa-thumbs-down"></i>
+                            </button>
+                            <button class="share-btn" id="share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+
+                            <div class="subscribe-container">
+                                <button class="subscribe-btn" id="subscribe-youtube-btn">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Subscribe</span>
+                                </button>
+                                <span class="subscriber-count" id="subscriber-count">96.2M</span>
+                            </div>
+                        </div>
+
+                        <div class="channel-info">
+                            <div class="channel-avatar-placeholder">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="channel-details">
+                                <h4>Donald J. Trump <i class="fas fa-check-circle verified-icon"></i></h4>
+                                <p>96.2M subscribers · @DonaldTrump</p>
+                            </div>
+                        </div>
+
+                        <div class="video-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Never sell your Bitcoin," says Trump — KCRG News Channel 7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Network Status Section -->
+        <section class="network-status">
+            <div class="container">
+                <div class="network-grid">
+                    <div class="network-card">
+                        <i class="fab fa-bitcoin"></i>
+                        <span>Bitcoin Network</span>
+                        <div class="network-live">
+                            <span class="live-dot-small"></span> LIVE
+                        </div>
+                    </div>
+                    <div class="network-card">
+                        <i class="fab fa-ethereum"></i>
+                        <span>Ethereum Network</span>
+                        <div class="network-live">
+                            <span class="live-dot-small"></span> LIVE
+                        </div>
+                    </div>
+                    <div class="network-card">
+                        <i class="fas fa-bolt"></i>
+                        <span>Solana Network</span>
+                        <div class="network-live">
+                            <span class="live-dot-small"></span> LIVE
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Official Social Media Section -->
+        <section class="official-social">
+            <div class="container">
+                <h2 class="section-title">OFFICIAL SOCIAL MEDIA</h2>
+                <p class="section-subtitle">Follow Trump & STRUMP meme on all official channels</p>
+                <div class="social-grid" id="social-grid">
+                    <!-- Social cards will be dynamically generated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="comments-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-comments"></i> COMMENTS
+                    <span class="comment-badge" id="comment-count">0</span>
+                </h2>
+                <div class="comments-container" id="comments-container">
+                    <div class="loading-comments">
+                        <i class="fas fa-spinner fa-spin"></i> Loading comments...
+                    </div>
+                </div>
+                <div class="add-comment" id="add-comment-section" style="display: none;">
+                    <div class="comment-input-wrapper">
+                        <textarea id="comment-text" placeholder="Add a comment..." rows="2"></textarea>
+                        <button id="post-comment-btn" class="post-comment-btn">
+                            Post <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="login-to-comment" class="login-to-comment" style="display: none;">
+                    <i class="fas fa-lock"></i>
+                    <p><a href="login.html">Login</a> to leave a comment</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="global-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span class="stat-number" id="total-paid">$47.2M</span>
+                        <span class="stat-label">Total Paid Out</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <span class="stat-number" id="total-participants">10,842</span>
+                        <span class="stat-label">Participants</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="stat-number">99.8%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <span class="stat-number">~6 min</span>
+                        <span class="stat-label">Avg. Payout Time</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-crown"></i>
+                    <span>CRYPTO MEME</span>
+                </div>
+                <div class="footer-links">
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+                <div class="footer-disclaimer">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p></p>
+                </div>
+                <div class="copyright">
+                    &copy; 2026 Crypto Meme. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdn.jsdelivr.net/npm/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/payout.js"></script>
+    <script src="js/crypto-data.js"></script>
+    <script src="js/landing.js"></script>
+    <!--<script src="js/former landing.js"></script>-->
+</body>
+
+</html>

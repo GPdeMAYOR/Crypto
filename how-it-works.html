@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works -CRYPTO MEME Giveaway</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/how-it-works.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <div id="toast-container"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-crown"></i>
+                <span>CRYPTO MEME</span>
+            </div>
+            <div class="nav-links desktop-nav">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="how-it-works.html" class="active"><i class="fas fa-question-circle"></i> How It Works</a>
+                <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                <div class="auth-link-container">
+                    <a href="login.html" class="auth-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </div>
+                <button class="theme-toggle" id="theme-toggle-desktop">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="mobile-nav">
+                <button class="theme-toggle-mobile" id="theme-toggle-mobile">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="mobile-menu-header">
+                    <span class="menu-title">Menu</span>
+                    <button class="close-menu" id="close-menu"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="mobile-menu-links">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="how-it-works.html"><i class="fas fa-question-circle"></i> How It Works</a>
+                    <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+                    <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                    <div class="mobile-auth-link">
+                        <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-overlay" id="menu-overlay"></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="how-it-works-hero">
+            <div class="container">
+                <h1>How to Participate</h1>
+                <p>Follow these simple steps to join the biggest crypto giveaway</p>
+            </div>
+        </section>
+
+        <section class="steps-detailed">
+            <div class="container">
+                <div class="step-detailed">
+                    <div class="step-number-large">01</div>
+                    <div class="step-content">
+                        <div class="step-icon-large">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h2>Choose Your Crypto</h2>
+                        <p>Select which cryptocurrency you want to participate with: <strong>BTC, ETH, SOL, or TRUMP</strong> tokens. Each has different minimum and maximum limits.</p>
+                        <div class="step-limits">
+                            <div class="limit-chip">BTC: 0.1 - 20 BTC</div>
+                            <div class="limit-chip">ETH: 1 - 500 ETH</div>
+                            <div class="limit-chip">SOL: 10 - 10,000 SOL</div>
+                            <div class="limit-chip">TRUMP: 1,000 - 1,000,000 TRUMP</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-detailed">
+                    <div class="step-number-large">02</div>
+                    <div class="step-content">
+                        <div class="step-icon-large">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h2>Send to Address</h2>
+                        <p>Copy the official wallet address for your chosen cryptocurrency and send your contribution from your personal wallet.</p>
+                        <div class="step-addresses">
+                            <div class="address-item">
+                                <span class="address-label">BTC:</span>
+                                <code>bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</code>
+                                <button class="copy-address" data-address="bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <div class="address-item">
+                                <span class="address-label">ETH:</span>
+                                <code>0x5336ff633160a71570e6084f14110412765cF66F</code>
+                                <button class="copy-address" data-address="0x5336ff633160a71570e6084f14110412765cF66F"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <div class="address-item">
+                                <span class="address-label">SOL:</span>
+                                <code>oSv1p7gEiKkGVg6AEqZ291bx9kuNEiwxRxZfgMVHabs</code>
+                                <button class="copy-address" data-address="oSv1p7gEiKkGVg6AEqZ291bx9kuNEiwxRxZfgMVHabs"><i class="fas fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <!--<div class="warning-tip">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>⚠️ Do NOT send from an exchange wallet. Use a personal wallet you control.</span>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="step-detailed">
+                    <div class="step-number-large">03</div>
+                    <div class="step-content">
+                        <div class="step-icon-large">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h2>Wait for Confirmation</h2>
+                        <p>The blockchain confirms your transaction automatically. This usually takes <strong>5-10 minutes</strong> depending on network congestion.</p>
+                        <div class="confirmation-timeline">
+                            <div class="timeline-item">
+                                <i class="fas fa-circle"></i>
+                                <span>Transaction broadcasted to network</span>
+                            </div>
+                            <div class="timeline-item">
+                                <i class="fas fa-circle"></i>
+                                <span>Pending confirmations (1/6 blocks)</span>
+                            </div>
+                            <div class="timeline-item">
+                                <i class="fas fa-circle"></i>
+                                <span>Transaction confirmed on-chain</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-detailed">
+                    <div class="step-number-large">04</div>
+                    <div class="step-content">
+                        <div class="step-icon-large">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h2>Receive 2x Back</h2>
+                        <p>Once confirmed, the smart contract automatically sends <strong>double your contribution</strong> back to your wallet address.</p>
+                        <div class="return-example">
+                            <div class="example-item">
+                                <span>You send:</span>
+                                <strong>0.5 BTC</strong>
+                                <i class="fas fa-arrow-right"></i>
+                                <span>You receive:</span>
+                                <strong class="gold">1.0 BTC</strong>
+                            </div>
+                            <div class="example-item">
+                                <span>You send:</span>
+                                <strong>10 SOL</strong>
+                                <i class="fas fa-arrow-right"></i>
+                                <span>You receive:</span>
+                                <strong class="gold">20 SOL</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="important-rules">
+            <div class="container">
+                <h2 class="section-title">Important Rules</h2>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <i class="fas fa-wallet"></i>
+                        <h3>Personal Wallet Only</h3>
+                        <p>Do not send from exchange wallets (Binance, Coinbase, etc.). Use a personal wallet like MetaMask, Phantom, or Trust Wallet.</p>
+                    </div>
+                    <div class="rule-card">
+                        <i class="fas fa-user-check"></i>
+                        <h3>One Entry Per Wallet</h3>
+                        <p>Each wallet address can only participate once. Duplicate entries will be rejected.</p>
+                    </div>
+                    <div class="rule-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Payment Proof Required</h3>
+                        <p>After sending, you must upload a screenshot of your transaction for verification.</p>
+                    </div>
+                    <div class="rule-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Payout Timeline</h3>
+                        <p>Once verified, you will receive 2x your amount within 5-10 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Participate?</h2>
+                <p>Join thousands of winners in the biggest crypto giveaway</p>
+                <a href="dashboard.html" class="cta-button-main">Get Started Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-crown"></i>
+                    <span>CRYPTO MEME</span>
+                </div>
+                <div class="footer-links">
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+                <!--<div class="footer-disclaimer">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>⚠️ EDUCATIONAL DEMO PROJECT - This is not a real cryptocurrency giveaway. No actual transactions occur.</p>
+                </div>-->
+                <div class="copyright">&copy; 2026 Crypto Meme. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/how-it-works.js"></script>
+</body>
+
+</html>
